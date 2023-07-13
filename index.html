@@ -45,7 +45,7 @@
             // yaha par jo submit button  ka defult kam hota hai use roka hai 
             e.preventDefault();
             //yaha par name ko arr ke dala hai
-            arr.push(student.value)
+            arr.push(student.value.toUpperCase())
             // yaha par wapsa se li ko creat kiya hai 
             let final=document.createElement('li')
             final.innerText=`${student.value}`;
@@ -68,8 +68,6 @@
             display.appendChild(final);
          }
         });
-
-
     </script>
 </body>
 </html>
